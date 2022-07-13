@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Scientific Calculator</title>
+    <link rel="stylesheet" href="Assets/css/scientific-calculator.css">
+</head>
+<body>
+    <div class="container">  
+        <div class="calculator">
+            <input type="text" id="screen" maxlength="20" placeholder="0">
+            <div class="calc-buttons">
+                <div class="functions-one">
+                    <div class="row">
+                        <button class="button btn-triggers" style="font-size: 15px; background-color: #adff2f;">SHIFT</button>
+                        <button class="button btn-triggers" style="font-size: 15px; background: #2fc4ff;">MODE</button>
+                        <button class="button complex-calc">x ²</button>
+                        <button class="button complex-calc">log</button>
+                        <button class="button complex-calc">ln</button>
+                        <button class="button btn-triggers">
+                            <span style="font-size: 10px; color: #07dddd;">ON </span>
+                            <span style="color: red; font-size: 10px;"> OFF</span>
+                        </button>    
+                    </div>
+                    <div class="row">
+                        <button class="button complex-calc">a<sup style="font-size: 12px;">b/c</sup></button>
+                        <button class="button complex-calc">rad</button>
+                        <button class="button complex-calc">hyp</button>
+                        <button class="button complex-calc">sin</button>
+                        <button class="button complex-calc">cos</button>
+                        <button class="button complex-calc">tan</button>
+                    </div>
+                    <div class="row">
+                        <button class="button basic-calc">±</button>
+                        <button class="button btn-triggers" id="play-btn">&#9658;</button>
+                        <button class="button basic-calc">(</button>
+                        <button class="button basic-calc">)</button>
+                        <button class="button complex-calc">x^</span></button>
+                        <button class="button btn-triggers" style="font-size: 15px;">MR</button> 
+                    </div>
+                    <div class="row">
+                        <button class="button complex-calc">π</button>
+                        <button class="button complex-calc">√</button>
+                        <button class="button complex-calc">%</button>
+                        <button class="button complex-calc">x !</button>
+                        <button class="button complex-calc">∘</button>
+                        <button class="button complex-calc" style="font-size: 15px;">MC</button>
+                    </div>
+                </div>
+                <div class="functions-two">
+                    <div class="row">
+                        <button class="button numbers">7</button>
+                        <button class="button numbers">8</button>
+                        <button class="button numbers">9</button>
+                        <button class="button btn-triggers btn-red">C</button>
+                        <button class="button triggers btn-red">AC</button>
+                    </div>
+                    <div class="row">
+                        <button class="button numbers">4</button>
+                        <button class="button numbers">5</button>
+                        <button class="button numbers">6</button>
+                        <button class="button basic-calc">*</button>
+                        <button class="button basic-calc">/</button>
+                    </div>
+                    <div class="row">
+                        <button class="button numbers">1</button>
+                        <button class="button numbers">2</button>
+                        <button class="button numbers">3</button>
+                        <button class="button basic-calc">+</button>
+                        <button class="button basic-calc">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="button numbers">0</button>
+                        <button class="button basic-calc">.</button>
+                        <button class="button complex-calc" style="font-size: 16px;">EXP</button>
+                        <button class="button triggers">=</button>
+                        <button class="button complex-calc" style="font-size: 16px;">M+</button>
+                    </div> 
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <script src="Assets/js/scientific-calculator.js"></script>
+</body>
+</html>

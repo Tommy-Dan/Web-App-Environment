@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    place-items: center;
+    justify-content: center;
+    background: #f8f4f4;  
+}
+.calculator {
+    position: relative;
+    max-width: 387px;
+    max-height: 100vh;
+    display: grid;
+    padding: 20px;
+    border-radius: 28px;
+    margin: 10px auto;
+    background-color: #ecf0f3;
+    box-shadow: inset 10px 10px 13px #fff, 10px 10px 3px rgba(0, 0, 0, 0.1);
+}
+.calculator:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+input[type=text] {
+    width: 350px;
+    height: 68px;
+    margin: 20px 0px 25px 0px;
+    border-radius: 15px;
+    padding: 20px;
+    border: none;
+    text-align: end;
+    font-size: 40px;
+    font-family: 'VT323', monospace;
+    color: #1a1919;
+    background-color: #88937f;
+    box-shadow: inset -6px -6px 13px #fff, inset 6px 6px 13px rgba(0, 0, 0, 0.16);
+}
+.calc-buttons {
+    display: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.functions-one .row .button{
+    width: 55px;
+    margin-left: -5px;
+}
+.functions-two .row .button{
+    width: 66px;
+    margin-left: -5px;
+    margin-top: 10px;
+}
+.button{
+    height: 40px;
+    margin: 4px 0px 12px 12px;
+    border-radius: 14px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: monospace;
+    transition: all 200ms ease;
+    box-shadow: inset 6px 6px 18px #fff, inset 6px 6px 18px rgba(0, 0, 0, 0.0);
+    border: 2px solid #e6e4e4;
+    font-weight: bold;
+    background-color: #ccc;
+ }
+ .functions-one {
+    width: 480px;
+    margin-left: 5px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.functions-two {
+    width: 480px;
+    margin-top: 8px;
+    margin-left: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.btn-red{
+    background-color: #db3742;
+    color: #fff;
+}
+#play-btn{
+    color: #008000;
+}
